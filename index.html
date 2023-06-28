@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#first" class="first" >VERIFICATION</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <section class="firstSection" id="first">
+          <div>
+            <h2>PLEASE ENTER YOUR UNIQUE PASS-KEY</h2>
+            <p>You have a unique passkey given to you, please enter it accurately to avoid being blocked by the server as you can only use it <em>once</em>.</p>
+          
+        <form class="form" action="">
+            <label for="pwd">One-Time-Password</label>
+            <input type="password"  class="pwd" id="OTP" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
+            required><br>
+            <input type="checkbox" onclick="myFunction()">Show OTP<br>
+            <button id="button">Verify</button>
+            <p id="text">WARNING! Caps lock is ON.</p>
+          </div>
+         </form>
+        </section>
+        <script type="text/javascript" src="Script.js"></script>
+    </div>
+</body>
+</html>
